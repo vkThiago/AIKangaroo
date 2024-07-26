@@ -8,7 +8,7 @@ ifdef gpu
 SRC = SECPK1/IntGroup.cpp main.cpp SECPK1/Random.cpp \
       Timer.cpp SECPK1/Int.cpp SECPK1/IntMod.cpp \
       SECPK1/Point.cpp SECPK1/SECP256K1.cpp \
-      GPU/GPUEngine.o Kangaroo.cpp HashTable.cpp \
+      GPU/GPUEngine.o aikangaroo.cpp HashTable.cpp \
       Backup.cpp Thread.cpp Check.cpp Network.cpp Merge.cpp PartMerge.cpp
 
 OBJDIR = obj
@@ -25,7 +25,7 @@ else
 SRC = SECPK1/IntGroup.cpp main.cpp SECPK1/Random.cpp \
       Timer.cpp SECPK1/Int.cpp SECPK1/IntMod.cpp \
       SECPK1/Point.cpp SECPK1/SECP256K1.cpp \
-      Kangaroo.cpp HashTable.cpp Thread.cpp Check.cpp \
+      aikangaroo.cpp HashTable.cpp Thread.cpp Check.cpp \
       Backup.cpp Network.cpp Merge.cpp PartMerge.cpp
 
 OBJDIR = obj
